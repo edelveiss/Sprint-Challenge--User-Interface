@@ -361,6 +361,68 @@ header nav {
 
 /*end of about section css*/
 
+
+/*contact section css*/
+
+.contact-middle h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #383651;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.contact-middle h3 {
+    text-align: center;
+    color: #383651;
+    margin: 20px auto;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-form .form-group {
+    padding: 0.45%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-form div {
+    width: 80%;
+}
+
+.contact-form div label {
+    font-size: 20px;
+}
+
+.contact-form div option {
+    font-size: 20px;
+}
+
+.contact-form div input {
+    width: 80%;
+    font-size: 20px;
+}
+
+.contact-form div textarea {
+    width: 68%;
+}
+
+.contact-form div .about-button .contact {
+    background-color: red;
+}
+
+
+/*end of about contact css*/
+
 footer {
     width: 100%;
     background: black;

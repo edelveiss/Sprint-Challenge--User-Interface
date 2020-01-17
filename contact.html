@@ -40,10 +40,10 @@
             <img src="img/jumbo.jpg" alt="Highway view">
 
 
-            <br>
+            <!-- <br>
             <br>
             <hr>
-            <br>
+            <br> -->
 
 
         </section>
@@ -52,38 +52,44 @@
 
         <!--contact information section-->
 
-        <br>
+        <!-- <br>
         <hr>
-        <br>
+        <br> -->
+
+        <section class="contact-middle">
+            <h1>Contact Us</h1>
+            <h3>Got a question? We'd love to hear from you and we'll respond as soon as possible.</h3>
+
+        </section>
 
 
-        <form action="process.php" method="POST">
+        <form class="contact-form" action="process.php" method="POST">
 
-            <div>
-                <label>First Name</label>
+            <div class="form-group">
+                <label class="fn">First Name</label>
                 <input type="text" name="firstName" placeholder="Enter first name">
             </div>
             <br>
-            <div>
-                <label>Last Name</label>
-                <input type="text" name="lastName">
+            <div class="form-group">
+                <label class="ln">Last Name</label>
+                <input type="text" name="lastName" placeholder="Enter last name">
             </div>
 
             <br>
-            <div>
-                <label>Email</label>
-                <input type="email" name="email">
+            <div class="form-group">
+                <label class="email">Email</label>
+                <input type="email" name="email" placeholder="Enter email">
             </div>
 
             <br>
-            <div>
-                <label>Message</label>
+            <div class="form-group">
+                <label class="message">Message</label>
                 <textarea name="message"></textarea>
             </div>
 
             <br>
-            <div>
-                <label>Gender</label>
+            <div class="form-group">
+                <label class="gender">Gender</label>
                 <select name="Gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -94,7 +100,11 @@
             <br>
 
             <br>
-            <input type="submit" name="submit" value="Submit">
+
+            <br><br>
+            <a class="about-button" href="">Submit</a>
+            <br><br>
+
             <!--"process.php in tab" -->
 
         </form>
