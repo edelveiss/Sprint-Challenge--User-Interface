@@ -413,11 +413,18 @@ header nav {
 }
 
 .contact-form div textarea {
-    width: 68%;
+    width: 80%;
 }
 
-.contact-form div .about-button .contact {
-    background-color: red;
+.contact-form div .contact {
+    background-color: #B91837;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-form .form-group {
+    display: flex;
+    justify-content: space-between;
 }
 
 
