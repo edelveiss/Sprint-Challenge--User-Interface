@@ -230,6 +230,14 @@ header nav {
     padding-bottom: 20px;
 }
 
+
+/*About section css*/
+
+.top-content .about-text {
+    width: 100%;
+    /*About section css*/
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -301,7 +309,7 @@ header nav {
 }
 
 
-/* Group of boxes*/
+/* End Group of boxes*/
 
 .bottom-content {
     display: flex;
@@ -316,6 +324,42 @@ header nav {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+
+/*about section css*/
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.about-content div {
+    width: 47.5%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 6%;
+    padding-bottom: 2%;
+}
+
+.bottom-text {
+    margin: 2% 0;
+}
+
+.about-button {
+    padding: 7px 33px;
+    border: 1.5px solid black;
+    border-radius: 9px;
+    background: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+
+/*end of about section css*/
 
 footer {
     width: 100%;
