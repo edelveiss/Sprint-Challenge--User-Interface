@@ -3,62 +3,183 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4,
+h5 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    /* font-size: 18px; */
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -66,33 +187,88 @@ p {
     line-height: 1.4;
 }
 
+section {
+    padding: 4% 0;
+}
+
 .container {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
 }
+
+
+/*navigation*/
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2% 0;
+    align-items: flex-end;
+}
+
+.logo {
+    width: 20%;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.nav-links a {
+    color: #292929;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #B91837;
+}
+
+
+/*End  of navigation*/
+
+
+/* Show case*/
+
+.showcase img {
+    width: 100%;
+}
+
+.showcase {
+    padding: 0%;
+}
+
+
+/* End of Show case*/
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-bottom: 1px dashed black;
+    padding-bottom: 2%;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    /* padding-bottom: 20px; */
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border-bottom: 1px dashed black;
+    padding-bottom: 0;
 }
 
 .middle-content h2 {
     padding: 0 2%;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .middle-content .boxes {
@@ -101,7 +277,8 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+
+/* .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -110,21 +287,214 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+.middle-content .boxes .box {
+    width: 12rem;
+    height: 12rem;
+    background: black;
+    margin: 2rem 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+/* Group of boxes*/
+
+.middle-content .boxes .b1 {
+    background: teal;
+}
+
+.middle-content .boxes .b2 {
+    background: gold;
+}
+
+.middle-content .boxes .b3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .b4 {
+    background: coral;
+}
+
+.middle-content .boxes .b5 {
+    background: crimson;
+}
+
+.middle-content .boxes .b6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .b7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .b8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .b9 {
+    background: indigo;
+}
+
+.middle-content .boxes .b10 {
+    background: dodgerblue;
+}
+
+
+/* End Group of boxes*/
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    /* margin: 0 2% 20px; */
     justify-content: space-around;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    /* padding-right: 4%; */
+    width: 30%;
 }
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+
+/*about section css*/
+
+.text-container {
+    padding-bottom: 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.about-content div {
+    width: 47.5%;
+    border-bottom: 0.1rem dashed black;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+.about-content img {
+    width: 100%;
+}
+
+.about-button {
+    padding: 0.7rem 3.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.9rem;
+    background: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-button:hover {
+    background-color: rgb(197, 189, 189);
+    color: white;
+}
+
+
+/*end of about section css*/
+
+
+/*contact section css*/
+
+.contact-middle h1,
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    color: #383651;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.contact-middle h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 520;
+}
+
+.contact-form .form-group {
+    padding: 0.45%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form div {
+    width: 80%;
+}
+
+.contact-form div label {
+    font-size: 2rem;
+}
+
+.contact-form div input {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.contact-form div input::placeholder {
+    color: rgb(197, 189, 189);
+}
+
+.contact-form div textarea {
+    width: 80%;
+}
+
+.contact-form div .contact {
+    background-color: #B91837;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-form div .contact:hover {
+    background-color: green;
+}
+
+.contact-form .contact-but {
+    margin: 8%;
+    width: 10%;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.contact-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.contact-form .form-group textarea {
+    font-size: 2rem;
+}
+
+select {
+    font-size: 2rem;
+    margin: 0 10.6rem;
+}
+
+.contact-form .gender-label {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1%;
+}
+
+
+/*end of about contact css*/
 
 footer {
     width: 100%;
@@ -136,11 +506,14 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    /* padding: 20px 2%;
+    font-size: 14px; */
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
-    color: white;
+    /* color: white; */
+    color: rgb(197, 189, 189);
     text-decoration: none;
 }
