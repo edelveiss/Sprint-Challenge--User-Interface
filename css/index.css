@@ -404,6 +404,95 @@ a:hover {
 
 /*end of about section css*/
 
+
+/*contact section css*/
+
+.contact-middle h1,
+h3 {
+    font-size: 4rem;
+    text-align: center;
+    color: #383651;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+.contact-middle h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 520;
+}
+
+.contact-form .form-group {
+    padding: 0.45%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form div {
+    width: 80%;
+}
+
+.contact-form div label {
+    font-size: 2rem;
+}
+
+.contact-form div input {
+    width: 80%;
+    font-size: 2rem;
+}
+
+.contact-form div input::placeholder {
+    color: rgb(197, 189, 189);
+}
+
+.contact-form div textarea {
+    width: 80%;
+}
+
+.contact-form div .contact {
+    background-color: #B91837;
+    color: white;
+    font-weight: bold;
+}
+
+.contact-form div .contact:hover {
+    background-color: green;
+}
+
+.contact-form .contact-but {
+    margin: 8%;
+}
+
+.contact-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.contact-form .form-group textarea {
+    font-size: 2rem;
+}
+
+select {
+    font-size: 2rem;
+    margin: 0 10.6rem;
+}
+
+.contact-form .gender-label {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1%;
+}
+
+
+/*end of about contact css*/
+
 footer {
     width: 100%;
     background: black;
