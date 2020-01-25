@@ -467,6 +467,9 @@ h3 {
 
 .contact-form .contact-but {
     margin: 8%;
+    width: 10%;
+    justify-content: center;
+    padding-top: 0;
 }
 
 .contact-form .form-group {
