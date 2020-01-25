@@ -361,6 +361,49 @@ a:hover {
     padding-right: 0;
 }
 
+
+/*about section css*/
+
+.text-container {
+    padding-bottom: 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.about-content div {
+    width: 47.5%;
+    border-bottom: 0.1rem dashed black;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+.about-content img {
+    width: 100%;
+}
+
+.about-button {
+    padding: 0.7rem 3.3rem;
+    border: 0.15rem solid black;
+    border-radius: 0.9rem;
+    background: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-button:hover {
+    background-color: rgb(197, 189, 189);
+    color: white;
+}
+
+
+/*end of about section css*/
+
 footer {
     width: 100%;
     background: black;
